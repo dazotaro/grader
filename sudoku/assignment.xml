@@ -1,0 +1,73 @@
+<assignment>
+    <name>Sudoku</name>
+    <tosubmit>
+        <file>Sudoku.hpp</file>
+        <file>Sudoku.cpp</file>
+    </tosubmit>
+    <tocopy>
+        <directory>./grading/</directory>
+        <file>board01.txt</file>
+        <file>board02.txt</file>
+        <file>board03.txt</file>
+        <file>master_test01.txt</file>
+        <file>master_test03.txt</file>
+        <file>Makefile</file>
+        <file>MySudoku.hpp</file>
+        <file>MySudoku.cpp</file>
+        <file>driver.cpp</file>
+    </tocopy>
+    <job>
+        <name>Build</name>
+        <description>Compile and Link Submission</description>
+        <outputfile>makefile_output.txt</outputfile>
+        <command>make</command>
+    </job>
+    <job>
+        <name>Test01</name>
+        <description>Execute test</description>
+        <outputfile>test01.txt</outputfile>
+        <command>./sudoku 1</command>
+    </job>
+    <job>
+        <name>Test02</name>
+        <description>Execute test</description>
+        <outputfile>test02.txt</outputfile>
+        <command>./sudoku 2</command>
+    </job>
+    <job>
+        <name>Test03</name>
+        <description>Execute test</description>
+        <outputfile>test03.txt</outputfile>
+        <command>./sudoku 3</command>
+    </job>
+    <job>
+        <name>Diff 01</name>
+        <description>Diff with expected output</description>
+        <outputfile>diff01.txt</outputfile>
+        <command>diff -ys master_test01.txt test01.txt</command>
+    </job>
+    <job>
+        <name>Diff 02</name>
+        <description>Diff with expected output</description>
+        <outputfile>diff02.txt</outputfile>
+        <command>diff -ys master_test02.txt test02.txt</command>
+    </job>
+    <job>
+        <name>Diff 03</name>
+        <description>Diff with expected output</description>
+        <outputfile>diff03.txt</outputfile>
+        <command>diff -ys master_test03.txt test03.txt</command>
+    </job>
+    <job>
+        <name>Valgrind</name>
+        <description>Valgrind Memory Check</description>
+        <outputfile>valgrind.txt</outputfile>
+        <command>valgrind --tool=memcheck --leak-check=full ./sudoku 3</command>
+    </job>
+    <job>
+        <name>Clean</name>
+        <description>Clean object code</description>
+        <outputfile>makefile_clean.txt</outputfile>
+        <command>make clean</command>
+    </job>
+</assignment>

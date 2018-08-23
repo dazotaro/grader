@@ -1,0 +1,20 @@
+<cohort>
+    <student>
+            <name>Han</name>
+            <lastname>Solo</lastname>
+            <username>hsolo</username>
+            <searchfor>solo</searchfor>
+    </student>
+    <student>
+            <name>Peter</name>
+            <lastname>Parker</lastname>
+            <username>pparker</username>
+            <searchfor>parker</searchfor>
+    </student>
+    <student>
+            <name>Marie</name>
+            <lastname>Curie</lastname>
+            <username>mcurie</username>
+            <searchfor>curie</searchfor>
+    </student>
+</cohort>
